@@ -177,12 +177,8 @@ footer {
     }
 }
 
-@media (max-width: 1200px) { 
-    .navbar-brand{
-        margin-left: 15%;
-    }
-
+@media (min-width: 1200px) { 
     #projects #projects__box .swiper, #projects #projects__box .swiper img {
-        max-width: 35em;
+        max-width: 30em;
     }
 }
