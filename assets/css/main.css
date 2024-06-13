@@ -24,10 +24,6 @@ ul {
     z-index: 11;
 }
 
-.navbar-brand {
-    margin-left: 6%;
-}
-
 .navbar a:hover {
     color: #f43b86;
 }
@@ -162,10 +158,6 @@ footer {
 }
 
 @media(max-width: 768px) {
-    .navbar-brand{
-        margin-left: 0;
-    }
-    
     #projects {
         display: flex;
         justify-content: center;
