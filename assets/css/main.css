@@ -1,0 +1,71 @@
+:root {
+    --black-color: #11052c;
+    --primary-color: #f43b86;
+    --secondary-color: #3d087b;
+    --terciary-color: #ffe459;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: var(--black-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.navbar {
+    position: fixed;
+    min-width: 100%;
+}
+
+.navbar-brand {
+    margin-left: 6%;
+}
+
+main {
+    min-height: 100vh;
+    padding-top: 4rem;
+}
+
+#home h1 {
+    font-size: 3.3em;
+}
+
+#home #home__box--pink {
+    background-color: var(--primary-color);
+    max-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#home #home__box--yellow {
+    min-height: 60vh;
+    background-color: var(--terciary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#about {
+    color: var(--primary-color);
+    min-height: 60vh;
+}
+
+#about #about__box .btn {
+    background-color: var(--secondary-color);
+    color: var(--terciary-color);
+    border: none;
+    transition: all 0.4s ease-in-out;
+}
+
+#about #about__box .btn:hover {
+    background-color: var(--terciary-color);
+    color: var(--secondary-color);
+}
