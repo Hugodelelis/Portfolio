@@ -60,14 +60,14 @@ main {
     color: var(--primary-color);
 }
 
-#about #about__box .btn {
+.btn {
     background-color: var(--secondary-color);
     color: var(--terciary-color);
     border: none;
     transition: all 0.4s ease-in-out;
 }
 
-#about #about__box .btn:hover {
+.btn:hover {
     background-color: var(--terciary-color);
     color: var(--secondary-color);
 }
@@ -107,8 +107,17 @@ main {
 }
 
 #contact #contact__input textarea {
-    height: 200px;
+    height: 250px;
     resize: none;
+}
+
+#contact #contact__button {
+    display: flex;
+    justify-content: center;
+}
+
+#contact #contact__button .btn {
+    min-width: 10em;
 }
 
 footer {
