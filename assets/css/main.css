@@ -132,8 +132,12 @@ main {
 }
 
 #contact #contact__input .form-control:focus {
-    box-shadow: 5px 5px 10px var(--primary-color);
+    box-shadow: none;
     border: 1px solid var(--primary-color);
+}
+
+#contact #contact__input .form-control:focus::placeholder {
+    color: var(--primary-color);
 }
 
 #contact #contact__button {
