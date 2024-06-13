@@ -15,7 +15,7 @@
     <title>Hugo.Dev</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" id="scrollspy">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Hugo.Dev</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,16 +24,16 @@
           <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link"  href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#about-menu">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Projects</a>
+                <a class="nav-link" href="#projects-menu">Projects</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="#contact">Contact</a>
               </li>
             </ul>
             </div>
@@ -52,6 +52,7 @@
                     <h1>Desenvolved</h1>
                     <h1>By</h1>
                     <h1>Hugo.dev</h1>
+                    <div id="about-menu"></div>
                 </div>
             </div>
         </div>
@@ -76,10 +77,11 @@
                   <li><i class="bi bi-bootstrap"></i></li>
                 </ul>
                 <a href="#" type="button" class="btn">Download CV</a>
+                <div id="projects-menu"></div>
             </div>
         </div>
-
-        <div class="container-fluid" id="projects">
+        
+        <div class="container-fluid" id="projects" >
           <div class="col-12 col-lg-12 p-4" id="projects__box">
             <h1>My projects</h1>
             <div class="swiper mySwiper">

@@ -28,6 +28,10 @@ ul {
     margin-left: 6%;
 }
 
+.navbar a:hover {
+    color: #f43b86;
+}
+
 main {
     min-height: 100vh;
     padding-top: 4rem;
