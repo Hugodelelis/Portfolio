@@ -21,6 +21,7 @@ ul {
 .navbar {
     position: fixed;
     min-width: 100%;
+    z-index: 11;
 }
 
 .navbar-brand {
@@ -42,6 +43,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    border-radius: 2em 2em 10em 2em;
 }
 
 #home #home__box--yellow {
@@ -51,11 +53,11 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: 10em 2em 2em 2em;
 }
 
 #about {
     color: var(--primary-color);
-    min-height: 60vh;
 }
 
 #about #about__box .btn {
@@ -68,4 +70,49 @@ main {
 #about #about__box .btn:hover {
     background-color: var(--terciary-color);
     color: var(--secondary-color);
+}
+
+#projects {
+    background: linear-gradient(to bottom right, white 0%, white 15%, var(--secondary-color) 5%, var(--secondary-color)106%);
+    min-height: 80vh;
+}
+
+#projects #projects__box h1 {
+    text-align: center;
+    color: var(--primary-color);
+}
+
+#projects #projects__box .swiper {
+    margin-top: 1em;
+}
+
+#projects #projects__box .swiper, #projects #projects__box .swiper img {
+    max-width: 25em;
+}
+
+#contact {
+    min-height: 60vh;
+}
+
+#contact h1 {
+    color: var(--terciary-color);
+}
+
+#contact #contact__input {
+    margin-top: 1.2em;
+}
+
+#contact #contact__input .form-control {
+    border: 1px solid var(--black-color);
+}
+
+#contact #contact__input textarea {
+    height: 200px;
+    resize: none;
+}
+
+footer {
+    background-color: var(--black-color);
+    color: white;
+    text-align: center;
 }

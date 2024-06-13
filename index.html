@@ -64,6 +64,72 @@
                 <a href="#" type="button" class="btn">Download CV</a>
             </div>
         </div>
+
+        <div class="container-fluid" id="projects">
+          <div class="col-12 col-lg-12 p-4" id="projects__box">
+            <h1>My projects</h1>
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container p-4" id="contact">
+          <form action="#">
+            <div class="row">
+              <h1>Contact me</h1>
+              <div class="col-12 col-lg-6" id="contact__input">
+                <label for="name" class="form-label">Name:</label>
+                <input type="text" class="form-control" placeholder="Name">
+              </div>
+              <div class="col-12 col-lg-6" id="contact__input">
+                <label for="Last_name" class="form-label">Last name:</label>
+                <input type="text" class="form-control" placeholder="Last name">
+              </div>
+              <div class="col-12" id="contact__input">
+                <label for="email" class="form-label">email:</label>
+                <input type="email" class="form-control" placeholder="email">
+              </div>
+              <div class="col-12" id="contact__input">
+                <label for="message" class="form-label">Your message:</label>
+                <textarea name="message" id="message" class="form-control" placeholder="your message"></textarea>
+              </div>
+            </div>
+          </form>
+        </div>
     </main>
+
+    <footer class="container-fluid p-2">©️Hugo.dev</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "cube",
+        grabCursor: true,
+        cubeEffect: {
+          shadow: true,
+          slideShadows: true,
+          shadowOffset: 20,
+          shadowScale: 0.94,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
 </body>
 </html>
