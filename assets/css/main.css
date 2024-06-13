@@ -60,6 +60,26 @@ main {
     color: var(--primary-color);
 }
 
+#about h2 {
+    color: var(--black-color);
+}
+
+#about #about__medias {
+    display: flex;
+    gap: 1em;
+    padding: 0;
+}
+
+#about #about__medias a {
+    font-size: 30px;
+    color: var(--primary-color);
+    transition: all 0.4s ease;
+}
+
+#about #about__medias a:hover {
+    color: var(--black-color);
+}
+
 .btn {
     background-color: var(--secondary-color);
     color: var(--terciary-color);
@@ -74,7 +94,7 @@ main {
 
 #projects {
     background: linear-gradient(to bottom right, white 0%, white 15%, var(--secondary-color) 5%, var(--secondary-color)106%);
-    min-height: 80vh;
+    min-height: 70vh;
 }
 
 #projects #projects__box h1 {
@@ -95,7 +115,7 @@ main {
 }
 
 #contact h1 {
-    color: var(--terciary-color);
+    color: var(--primary-color);
 }
 
 #contact #contact__input {
@@ -111,6 +131,11 @@ main {
     resize: none;
 }
 
+#contact #contact__input .form-control:focus {
+    box-shadow: 5px 5px 10px var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
 #contact #contact__button {
     display: flex;
     justify-content: center;
@@ -124,4 +149,22 @@ footer {
     background-color: var(--black-color);
     color: white;
     text-align: center;
+}
+
+@media(max-width: 768px) {
+    #projects {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #projects #projects__box .swiper, #projects #projects__box .swiper img {
+        max-width: 20em;
+    }
+}
+
+@media (min-width: 1200px) { 
+    #projects #projects__box .swiper, #projects #projects__box .swiper img {
+        max-width: 35em;
+    }
 }
