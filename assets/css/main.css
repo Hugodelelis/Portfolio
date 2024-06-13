@@ -62,6 +62,7 @@ main {
 
 #about {
     color: var(--primary-color);
+    text-align: center;
 }
 
 #about h2 {
@@ -72,6 +73,7 @@ main {
     display: flex;
     gap: 1em;
     padding: 0;
+    justify-content: center;
 }
 
 #about #about__medias a, #about #about__skills li {
@@ -175,7 +177,7 @@ footer {
     }
 }
 
-@media (min-width: 1200px) { 
+@media (max-width: 1200px) { 
     .navbar-brand{
         margin-left: 15%;
     }
