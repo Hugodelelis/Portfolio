@@ -1,0 +1,17 @@
+.btn-primary {
+    background-color: var(--blue-010);
+    border: none;
+    cursor: pointer;
+    padding: 1em;
+    border-radius: 0.8em;
+    color: var(--black-030);
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+
+    img {
+        width: 1.5em;
+    }
+}
