@@ -6,6 +6,7 @@
         display: flex;
         justify-content: left;
         align-items: center;
+        flex-wrap: wrap;
         gap: 1em;
 
         .stack {

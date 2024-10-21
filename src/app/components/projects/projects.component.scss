@@ -15,6 +15,7 @@
             flex-direction: column;
             justify-content: left;
             align-items: flex-start;
+            padding: 1em;
             gap: 1em;
         }
 
@@ -27,6 +28,13 @@
 
         img {
             width: 20em;
+        }
+    }
+
+    @media(max-width: 1200px) {
+        .project { 
+            flex-direction: column;
+            padding: 1em;
         }
     }
 }
