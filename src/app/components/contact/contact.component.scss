@@ -1,0 +1,35 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    .contacts{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+        height: 20vh;
+    }
+
+    a {
+        background-color: var(--blue-010);
+        color: var(--black-010);
+        font-weight: bold;
+        padding: 0.5em;
+        width: 10em;
+        border-radius: 0.8em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5em;
+        transition: 0.4s ease all;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        img {
+            width: 1.5;
+            height: 1.5em;
+        }
+    }
+}

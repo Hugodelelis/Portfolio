@@ -1,28 +1,55 @@
 :host {
-    display: block;
-    position: fixed;
-    margin-top: 1em;
-    width: 80%;
-    
-    nav {
-        padding: 1em 0em;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 1em;
 
-        h1 a {
-            color: var(--black-030);
-            font-size: 1.8em;
+    .github, .download  {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        padding: 0.3em;
+        transition: 0.4s ease all;
+
+        &:hover {
+            transform: scale(1.1);
         }
 
-        ul {
-            display: flex;
-            gap: 1em;
-            font-size: 1.4em;
-            
-            li a {
-                color: var(--white-010);
-            }
+        img {
+            width: 2.5em;
+            height: 2.5em;
+        }
+    }
+
+    .github {
+        background-color: var(--orange-010);
+    }
+
+    .download {
+        background-color: var(--green-010);
+    }
+
+    img {
+        width: 4em;
+        height: 4em;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    .perfil {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+        background-color: var(--blue-010);
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        padding: 0.5em 1em;
+        border-radius: 10em;
+
+        h1 {
+            border-radius: 10em;
+            font-size: 1em;
         }
     }
 }

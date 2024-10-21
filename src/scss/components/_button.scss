@@ -1,17 +1,16 @@
-.btn-primary {
+.btn {
     background-color: var(--blue-010);
-    border: none;
-    cursor: pointer;
-    padding: 1em;
-    border-radius: 0.8em;
-    color: var(--black-030);
+    color: var(--black-010);
+    padding: 0.5em;
+    width: 8em;
     font-weight: bold;
+    border-radius: 0.8em;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 0.5em;
+    transition: 0.4s ease all;
 
-    img {
-        width: 1.5em;
+    &:hover {
+        background-color: var(--blue-020);
     }
 }

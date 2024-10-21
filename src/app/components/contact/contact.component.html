@@ -1,0 +1,9 @@
+<h2>🌐 Contact me!</h2>
+
+
+<div class="contacts">
+    @for(item of medias(); track item) {
+        <a [href]="item.alt" [style.background-color]="item.backgroundColor" target="_blank"><img [src]="item.src" [alt]="item.title">{{item.title }}</a>
+    }
+</div>
+

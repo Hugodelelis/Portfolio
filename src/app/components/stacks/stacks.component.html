@@ -1,0 +1,10 @@
+<h2>💻 My stacks!</h2>
+
+<div class="stacks">
+    @for(item of techStacks(); track item) {
+        <div class="stack" [style.background-color]="item.backgroundColor">
+            <img [src]="item.src" [alt]="item.alt">
+            <h3>{{ item.title }}</h3>
+        </div>
+    }
+</div>

@@ -1,0 +1,30 @@
+:host {
+    h2 {
+        margin-bottom: 1em;
+    }
+    .stacks{
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        gap: 1em;
+
+        .stack {
+            width: 11em;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            gap: 1em;
+            padding: 0.5em;
+            border-radius: 0.8em;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+            img {
+                width: 1.5em;
+            }
+
+            h3 {
+                font-size: 1.2em;
+            }
+        }
+    }
+}

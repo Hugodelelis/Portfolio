@@ -1,7 +1,12 @@
 :host {
+    display: block;
     min-height: 100vh;
+    margin: 2em 0em;
 
     main {
-        padding-top: 7em;
+        padding-top: 3em;
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
     }
 }
