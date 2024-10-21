@@ -6,10 +6,11 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden !important;
 }
 
 body {
-    overflow-x: hidden;
+    overflow-x: hidden !important;
     font-family: "Istok Web", sans-serif;
     background-color: var(--white-010);
     color: var(--black-010);

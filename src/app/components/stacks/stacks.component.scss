@@ -2,7 +2,7 @@
     h2 {
         margin-bottom: 1em;
     }
-    .stacks{
+    .stacks {
         display: flex;
         justify-content: left;
         align-items: center;
@@ -26,6 +26,13 @@
             h3 {
                 font-size: 1.2em;
             }
+        }
+    }
+
+    @media (max-width: 992px) {
+        .stacks {
+            justify-content: center;
+            align-items: center;
         }
     }
 }
