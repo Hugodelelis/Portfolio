@@ -32,5 +32,9 @@ h1, h2, h3, h4 {
 hr {
     border: none;
     border-top: 2px solid var(--white-020);
-    width: 100%; 
+    width: 100%;
+}
+
+.active {
+  color: var(--blue-010);
 }

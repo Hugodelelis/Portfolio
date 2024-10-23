@@ -1,5 +1,63 @@
 :host {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+
+  .about-header {
     display: flex;
-    flex-direction: column;
+    justify-content: left;
+    align-items: center;
     gap: 1em;
+    margin-bottom: 2em;
+    scroll-margin-top: 300px;
+
+    .github, .download  {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      padding: 0.3em;
+
+      img {
+          width: 2.5em;
+          height: 2.5em;
+          transition: 0.4s ease all;
+
+          &:hover {
+              transform: scale(0.8) !important;
+          }
+      }
+  }
+
+  .github {
+      background-color: var(--orange-010);
+  }
+
+  .download {
+      background-color: var(--green-010);
+  }
+
+  img {
+      width: 4em;
+      height: 4em;
+      object-fit: cover;
+      border-radius: 50%;
+  }
+
+  .perfil {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1em;
+      background-color: var(--blue-010);
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      padding: 0.5em 1em;
+      border-radius: 10em;
+
+      h1 {
+          border-radius: 10em;
+          font-size: 1em;
+      }
+    }
+  }
 }

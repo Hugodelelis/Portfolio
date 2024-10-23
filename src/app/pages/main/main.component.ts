@@ -5,11 +5,12 @@ import { StacksComponent } from '../../components/stacks/stacks.component';
 import { ProjectsComponent } from '../../components/projects/projects.component';
 import { ContactComponent } from '../../components/contact/contact.component';
 import { FooterComponent } from '../../components/footer/footer.component';
+import { CoursesComponent } from '../../components/courses/courses.component';
 
 @Component({
   selector: 'app-main',
   standalone: true,
-  imports: [HeaderComponent, AboutComponent, StacksComponent, ProjectsComponent, ContactComponent, FooterComponent],
+  imports: [HeaderComponent, AboutComponent, StacksComponent, ProjectsComponent, ContactComponent, CoursesComponent, FooterComponent],
   templateUrl: './main.component.html',
   styleUrl: './main.component.scss'
 })

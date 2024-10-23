@@ -1,10 +1,12 @@
 :host {
+
     h2 {
         margin-bottom: 1em;
     }
+
     .stacks {
         display: flex;
-        justify-content: left;
+        justify-content: center;
         align-items: center;
         flex-wrap: wrap;
         gap: 1em;

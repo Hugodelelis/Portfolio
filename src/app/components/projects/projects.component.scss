@@ -3,6 +3,10 @@
     flex-direction: column;
     gap: 2em;
 
+    h2 {
+      scroll-margin-top: 150px;
+    }
+
     .project {
         display: flex;
         justify-content: center;
@@ -32,7 +36,7 @@
     }
 
     @media(max-width: 1200px) {
-        .project { 
+        .project {
             flex-direction: column;
             padding: 1em;
         }
