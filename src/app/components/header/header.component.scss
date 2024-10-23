@@ -13,6 +13,10 @@
     gap: 1em;
     z-index: 50;
 
+    .nav-mobile {
+      display: none;
+    }
+
     h1 a {
       color: var(--black-010);
       font-family: "Great Vibes", cursive;
@@ -35,10 +39,15 @@
     }
 
     @media (max-width: 992px) {
-      width: 96%;
-      
+      width: 100%;
+      max-width: 93vw;
+
       .nav-desktop {
         display: none;
+      }
+
+      .nav-mobile {
+        display: block;
       }
     }
 }
