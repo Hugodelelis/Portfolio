@@ -11,5 +11,13 @@
 
 
 <nav class="nav-mobile">
-  <button><img src="assets/icons/menu.svg" alt=""></button>
+  <button class="btn-menu-mobile" (click)=" stateMenu()"><img src="assets/icons/menu.svg" alt="menu"></button>
+  @if(showMenu === true) {
+    <ul class="animate__animated animate__bounceInUp">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#courses">Courses</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  }
 </nav>

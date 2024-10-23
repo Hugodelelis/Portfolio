@@ -8,5 +8,13 @@ import { Component } from '@angular/core';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
+  showMenu: boolean = false
 
+  stateMenu() {
+    if(this.showMenu === false) {
+      return this.showMenu = true
+    }
+
+    return this.showMenu = false
+  }
 }

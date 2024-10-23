@@ -16,3 +16,15 @@
         background-color: var(--blue-020);
     }
 }
+
+
+.btn-menu-mobile {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transform: 0.4s ease all;
+
+  &:hover {
+    transform: scaleX(1.2);
+  }
+}

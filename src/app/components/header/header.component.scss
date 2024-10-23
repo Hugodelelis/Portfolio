@@ -40,7 +40,9 @@
 
     @media (max-width: 992px) {
       width: 100%;
-      max-width: 93vw;
+      max-width: 92vw;
+      backdrop-filter: none;
+      background-color: var(--white-010);
 
       .nav-desktop {
         display: none;
@@ -48,6 +50,25 @@
 
       .nav-mobile {
         display: block;
+        position: relative;
+        z-index: 50;
+
+        ul {
+          top: 4em;
+          right: 0px;
+          position: absolute;
+          flex-direction: column;
+          justify-content: right;
+          align-items: flex-end;
+          width: 7em;
+          border-radius: 0.8em;
+          padding: 1em;
+
+          background: rgba(255, 255, 255, 0.2);
+          backdrop-filter: blur(10px);
+          border: 1px solid rgba(255, 255, 255, 0.3);
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        }
       }
     }
 }
