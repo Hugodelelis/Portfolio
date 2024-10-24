@@ -1,6 +1,9 @@
 .container {
     width: 60%;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
 }
 
 @media(max-width: 992px) {

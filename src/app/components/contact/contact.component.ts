@@ -1,5 +1,5 @@
 import { Component, signal } from '@angular/core';
-import { ITechStack } from '../../interfaces/stacks.interface';
+import { IContacts } from '../../interfaces/contacts.interface';
 
 @Component({
   selector: 'app-contact',
@@ -9,7 +9,7 @@ import { ITechStack } from '../../interfaces/stacks.interface';
   styleUrl: './contact.component.scss'
 })
 export class ContactComponent {
-  medias = signal<ITechStack[]>([
+  medias = signal<IContacts[]>([
     {
       src: 'assets/icons/linkedin.svg',
       alt: 'https://www.linkedin.com/in/hugo-lelis-a873392b8/',

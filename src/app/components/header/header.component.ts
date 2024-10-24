@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { ThemeService } from '../../services/theme.service';
 
 @Component({
   selector: 'app-header',
@@ -18,15 +19,15 @@ export class HeaderComponent {
     return this.showMenu = false
   }
 
-  theme: 'white' | 'black' = 'white';
+  #themeService = inject(ThemeService)
+
+  get theme() {
+    return this.#themeService.theme();
+  }
+
   buttonTheme: string = 'theme-toggle'
 
-  selectTheme() {
-    if (this.theme === 'white') {
-      this.theme = 'black';
-    } else if (this.theme === 'black') {
-      this.theme = 'white';
-    }
-    return this.theme;
+  getSelectTheme() {
+    this.#themeService.selectTheme()
   }
 }

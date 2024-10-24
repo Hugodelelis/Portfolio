@@ -2,7 +2,7 @@
 
 <div class="stacks animate__animated animate__bounceInRight">
     @for(item of techStacks(); track item) {
-        <div class="stack" [style.background-color]="item.backgroundColor">
+        <div class="stack">
             <img [src]="item.src" [alt]="item.alt">
             <h3>{{ item.title }}</h3>
         </div>

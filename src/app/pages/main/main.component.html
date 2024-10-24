@@ -1,19 +1,21 @@
-<header class="container">
+<header class="container" [class]="theme">
     <app-header/>
 </header>
 
-<main class="container">
-    <app-about/>
-    <hr>
-    <app-stacks/>
-    <hr>
-    <app-projects/>
-    <hr>
-    <app-courses/>
-    <hr>
-    <app-contact/>
+<main [class]="theme">
+    <div class="container">
+      <app-about/>
+      <hr>
+      <app-stacks/>
+      <hr>
+      <app-projects/>
+      <hr>
+      <app-courses/>
+      <hr>
+      <app-contact/>
+    </div>
 </main>
 
-<footer class="container">
+<footer [class]="theme">
     <app-footer/>
 </footer>

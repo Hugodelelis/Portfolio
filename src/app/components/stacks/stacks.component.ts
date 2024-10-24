@@ -14,25 +14,21 @@ export class StacksComponent {
       src: 'assets/icons/angular.svg',
       alt: 'angular',
       title: 'Angular',
-      backgroundColor: 'var(--white-020)',
     },
     {
       src: 'assets/icons/typescript.svg',
       alt: 'typescript',
       title: 'TypeScript',
-      backgroundColor: 'var(--white-020)',
     },
     {
       src: 'assets/icons/bootstrap.svg',
       alt: 'bootstrap',
       title: 'Bootstrap',
-      backgroundColor: 'var(--white-020)',
     },
     {
       src: 'assets/icons/sass.svg',
       alt: 'sass',
       title: 'Sass',
-      backgroundColor: 'var(--white-020)',
     }
   ])
 }

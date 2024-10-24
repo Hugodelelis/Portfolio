@@ -3,12 +3,12 @@
 <nav class="nav-desktop">
   <ul>
     <li>
-      <button  class="theme-toggle" [class.black]="theme === 'white'" [class.white]="theme === 'black'" (click)="selectTheme()">
-        @if(theme === 'white') {
+      <button  class="theme-toggle" [class.black-theme]="theme === 'white-theme'" [class.white-theme]="theme === 'black-theme'" (click)="getSelectTheme()">
+        @if(theme === 'white-theme') {
           <img src="assets/icons/moon.svg" alt="moon">
         }
 
-        @if(theme === 'black') {
+        @if(theme === 'black-theme') {
           <img src="assets/icons/sunny.svg" alt="moon">
         }
       </button>
@@ -22,12 +22,12 @@
 
 
 <nav class="nav-mobile">
-  <button  class="theme-toggle" [class.black]="theme === 'white'" [class.white]="theme === 'black'" (click)="selectTheme()">
-    @if(theme === 'white') {
+  <button  class="theme-toggle" [class.black-theme]="theme === 'white-theme'" [class.white-theme]="theme === 'black-theme'" (click)="getSelectTheme()">
+    @if(theme === 'white-theme') {
       <img src="assets/icons/moon.svg" alt="moon">
     }
 
-    @if(theme === 'black') {
+    @if(theme === 'black-theme') {
       <img src="assets/icons/sunny.svg" alt="moon">
     }
   </button>
