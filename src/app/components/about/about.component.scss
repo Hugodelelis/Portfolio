@@ -60,4 +60,10 @@
       }
     }
   }
+
+  @media(max-width: 992px) {
+    .about-header {
+      margin-bottom: 1em;
+    }
+  }
 }
