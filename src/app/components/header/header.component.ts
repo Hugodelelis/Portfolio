@@ -17,4 +17,16 @@ export class HeaderComponent {
 
     return this.showMenu = false
   }
+
+  theme: 'white' | 'black' = 'white';
+  buttonTheme: string = 'theme-toggle'
+
+  selectTheme() {
+    if (this.theme === 'white') {
+      this.theme = 'black';
+    } else if (this.theme === 'black') {
+      this.theme = 'white';
+    }
+    return this.theme;
+  }
 }

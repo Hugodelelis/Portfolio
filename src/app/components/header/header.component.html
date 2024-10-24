@@ -2,6 +2,17 @@
 
 <nav class="nav-desktop">
   <ul>
+    <li>
+      <button  class="theme-toggle" [class.black]="theme === 'white'" [class.white]="theme === 'black'" (click)="selectTheme()">
+        @if(theme === 'white') {
+          <img src="assets/icons/moon.svg" alt="moon">
+        }
+
+        @if(theme === 'black') {
+          <img src="assets/icons/sunny.svg" alt="moon">
+        }
+      </button>
+    </li>
     <li><a href="#home">Home</a></li>
     <li><a href="#projects">Projects</a></li>
     <li><a href="#courses">Courses</a></li>
@@ -11,6 +22,15 @@
 
 
 <nav class="nav-mobile">
+  <button  class="theme-toggle" [class.black]="theme === 'white'" [class.white]="theme === 'black'" (click)="selectTheme()">
+    @if(theme === 'white') {
+      <img src="assets/icons/moon.svg" alt="moon">
+    }
+
+    @if(theme === 'black') {
+      <img src="assets/icons/sunny.svg" alt="moon">
+    }
+  </button>
   <button class="btn-menu-mobile" (click)=" stateMenu()">
     @if(showMenu === false) {
       <img src="assets/icons/menu.svg" alt="menu">
